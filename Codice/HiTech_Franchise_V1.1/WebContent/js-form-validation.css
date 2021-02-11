@@ -1,0 +1,190 @@
+* {
+	font-family: verdana, sans-serif;
+}
+body {
+	margin: 0 auto;
+	width: 100%;
+	background-image: url("./images/hitech.jpg");
+}
+header.top {
+	height: 70px;
+	text-align: center;
+	background: linear-gradient(#808080, #4f4f4f);
+}
+
+header.top img {
+	height: 70px;
+	width: 450px; 
+}
+
+
+nav {
+	width:100%;
+	height: 30px;
+	background: linear-gradient(#83d6fc, #0088ff); /*#003399 */
+	padding-top: 5px;
+}
+nav div#homeb {
+		background-image: url("./images/home.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 15px;
+		display:block;
+		float:left;
+
+}
+
+nav div#logout {
+		background-image: url("./images/logout.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 15px;
+		display: block;
+		float:right;
+}
+
+nav div#catalogo {
+		background-image: url("./images/busta.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 25px;
+		display:block;
+		float:left;
+
+}
+
+nav div#user {
+		background-image: url("./images/avatar-icon.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 15px;
+		display: block;
+		float:right;
+}
+
+nav div#cart {
+		background-image: url("./images/cart.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 15px;
+		float:right;
+}
+div#bContent{
+	min-width:550px;
+	display: block;
+	position:absolute;
+	height: calc(100% - 145px);
+	width: 100%;
+	overflow:auto;
+
+
+
+}
+h1 {
+margin-left: 70px;
+color:#efefef;
+}
+form li {
+list-style: none;
+margin-bottom: 5px;
+}
+form ul li label{
+float: left;
+clear: left;
+width: 100px;
+text-align: right;
+margin-right: 10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#efefef;
+}
+form ul li a{
+	color:red;
+	font-weight:bold;
+}
+form ul li input, select, span {
+margin-bottom: 15px;
+}
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+}
+[type="submit"] {
+clear: left;
+font-size:18px;
+display:block;
+margin-left:200px;
+}
+p {
+margin-left: 70px;
+font-weight: bold;
+color:#efefef;
+}
+#userBig{
+	float:left;
+}
+.us{
+	color:#efefef;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 25px;
+	
+}
+#rg{	
+	margin-left:130px;
+}
+#rg:link{
+	color:#efefef;
+}
+#rg:visited{
+	color:#efefef;
+}
+#first,#second,#third,#fourth,#fifth,#dimissioni{
+	display:none;
+}
+.starters{
+	
+	width:200px;
+	margin-bottom:15px;
+	margin-left:15px;
+	margin-top:10px;
+	
+	
+}
+
+#first.active,#second.active,#third.active,#fourth.active,#fifth.active,#dimissioni.active{
+	display:block;
+}
+footer#last {
+	position:absolute;
+	clear: both;
+	height: 40px;
+	width: 100%;
+	background: linear-gradient(#808080, #4f4f4f);
+	text-align: center;
+	line-height: 40px;
+	font-size: 80%;
+	top: calc(100% - 40px);
+	color:#efefef;
+}
+@media screen and (max-width: 1000px) {
+
+footer#last {
+display:none;
+}}

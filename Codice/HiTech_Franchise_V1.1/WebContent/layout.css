@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+* {
+	font-family: verdana, sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	width: 100%;
+}
+
+header.top {
+	height: 70px;
+	text-align: center;
+	background: linear-gradient(#808080, #4f4f4f);
+}
+
+header.top img {
+	height: 70px;
+	width: 450px; 
+}
+
+nav {
+	height: 30px;
+	background: linear-gradient(#83d6fc, #0088ff); /*#003399 */
+	padding-top: 5px;
+}
+
+
+
+nav div#homeb {
+		background-image: url("./images/home.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 15px;
+		display:block;
+		float:left;
+
+}
+
+
+nav div#catalogo {
+		background-image: url("./images/busta.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 25px;
+		display:block;
+		float:left;
+
+}
+
+nav div#user {
+		background-image: url("./images/avatar-icon.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 15px;
+		display: block;
+		float:right;
+}
+
+nav div#cart {
+		background-image: url("./images/cart.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 15px;
+		float:right;
+}
+
+nav div#logout {
+		background-image: url("./images/logout.png");
+		width: 30px;
+		height: 25px;
+		background-size: 30px 25px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		margin-left: 15px;
+		display: block;
+		float:right;
+}
+
+
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+
+nav ul li a:link, nav ul li a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	}
+
+nav ul li a:hover {
+	color: #ff0000;
+}
+
+nav ul li.selected a:link {
+	color: white;
+}
+
+
+div#middle {
+	display: block;
+	position:absolute;
+	overflow: auto;
+	height: calc(100% - 145px);
+		float:left;
+		transition: all 500ms linear;
+	width: 98%;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+
+
+
+
+	
+	header#catTitle{
+	
+	font-size:50px;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+	
+	
+	}
+div.PVContainer{
+	display:block;
+	width:98%;
+	height:65px;
+	border-style:inset;
+	border-color:black;
+	border-width:2px;
+	margin-top:2px;
+	}
+	
+	div.productContainer{
+	display:block;
+	width:calc(100%);
+	height:120px;
+	
+	}
+	*.productPicture{
+	margin-left:5px;
+	height:100px;
+	width:100px;
+	float:left;
+	}
+	
+	div.productName a{
+	text-decoration:none;
+	font-weight: bold;
+	margin-left: 7px;
+	font-family:Verdana;
+	
+	}
+	
+		div.productName a:link{
+	color: blue;
+	}
+	
+		div.productName a:hover{
+	color: blue;
+	}
+	
+	div.productName a:visited{
+	text-decoration:none;
+	margin-left: 7px;
+	}
+	
+	div.productPrice{
+	margin-left:7px;
+	}
+	
+	div.productPrice a{
+	font-family:optima;
+	margin-left:15px;
+	font-weight: bold;
+	font-size: 30px;
+	
+	}
+div#categories,#bycode{
+	display: none;
+}
+	
+div#categories.active{
+	display: block;
+}	
+div#bycode.active{
+	display: block;
+}	
+
+	div.cartBox{
+	width:100%;
+	}
+	div.cartContainer{
+	width:300px;
+	}
+	.cartPicture{
+	width:175px;
+	height:175x;
+	margin:auto;
+	}
+	.cartName{
+	font-size:20px;
+	}
+	.cartPrice{
+	font-size:20px;
+	}
+	.cartCancel{
+	background-image: url("./images/cross.png");
+		width: 10px;
+		height: 10px;
+		background-size: 10px 10px;
+		background-repeat: no-repeat;
+		cursor: context-menu;
+		display: block;
+		float:right;
+	}
+footer{
+		width: 100%;
+}
+footer#last {
+	position:absolute;
+	clear: both;
+	height: 40px;
+
+	background: linear-gradient(#808080, #4f4f4f);
+	text-align: center;
+	line-height: 40px;
+	font-size: 80%;
+	top: calc(100% - 40px);
+	color:#efefef;
+}
+
+
+
+/*******************************************/
+@media screen and (max-width: 1000px) {
+	header.top img {
+	height: 50px;
+	width: 321px; 
+}
+	body {
+		width: 100%;
+	}
+
+	
+	
+	nav ul li {
+		display: none;
+	}
+
+
+
+ div#middle {
+
+	height: calc(100% - 109px);
+
+}
+
+	
+	div.productContainer{
+	height:180px;
+	
+	}
+	
+	
+
+	
+footer#last {
+display:none;
+}
+	
+}
